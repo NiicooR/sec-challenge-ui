@@ -31,7 +31,7 @@ export const AmountInputForm = () => {
           flexGrow: 1,
         }}
       >
-        {`Wallet: ${useGlobalContext.selectedWallet}`}
+        {`Wallet: ${useGlobalContext.selectedWallet || 'Select an address from the table'}`}
         <div style={{ margin: '5px', display: 'flex', justifyContent: 'end' }}>
           {editMode ? (
             <>
